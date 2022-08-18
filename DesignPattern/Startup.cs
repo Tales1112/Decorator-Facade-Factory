@@ -25,7 +25,7 @@ namespace DesignPattern
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddSendGrid(x => x.ApiKey = "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");
+            services.AddSendGrid(x => x.ApiKey = "");
             services.AddScoped<INotificationFactoryFacade, NotificationFactoryFacade>();
             services.AddMediatR(typeof(NotifyUserCommand));
             //services.AddScoped<NotifyUserCommandHandler>();
